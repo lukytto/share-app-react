@@ -34,7 +34,6 @@ const Home = () => {
   return (
     <div className="flex bg-gray-50 md:flex-row flex-col h-screen transaction-height duration-75 ease-out">
       <div className="hidden md:flex h-screen flex-initial">
-        //mobile sidebar
         <Sidebar user={user && user} />
       </div>
       <div className="flex md:hidden flex-row">
@@ -60,7 +59,7 @@ const Home = () => {
                 onClick={() => setToggleSidebar(false)}
               />
             </div>
-            //desktop sidebar
+
             <Sidebar user={user && user} closeToggle={setToggleSidebar} />
           </div>
         )}
